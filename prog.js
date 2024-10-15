@@ -1,7 +1,7 @@
 var map = L.map('map').setView([46.971695654090354,-1.3002190607684483], 8);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 30,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
@@ -29,10 +29,12 @@ function updateBtn() {
     txt.textContent = "the page is in English. ";
 	txt1.textContent = "the boat. ";
 	txt2.textContent = "température eau: ";
+	marker.bindPopup("<b>This is in english</b>");
   } else {
     btn.value = "English";
     txt.textContent = "la page est en francais.";
 	txt1.textContent = "le bateau. ";
 	txt2.textContent = "water temperature: ";
+	marker.bindPopup("<b>23 septembre 2024 9h30</b><br>température eau:</br><f>ph de l'eau:</f><g>profondeur de l'eau:</g>")
   }
 }

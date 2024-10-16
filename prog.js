@@ -1,4 +1,3 @@
-L=2309
 var map = L.map('map').setView([46.971695654090354,-1.3002190607684483], 8);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -14,7 +13,7 @@ var circle = L.circle([46.97612515784068, -1.3130444708906186], {
     fillOpacity: 0.5,
     radius: 700
 }).addTo(map);
-marker.bindPopup("<b>23 septembre 2024 9h30</b><br>température eau:</br><f>ph de l'eau:</f><g>profondeur de l'eau:</g>",L).openPopup();
+marker.bindPopup("<b>23 septembre 2024 9h30</b><br>température eau:</br><f>ph de l'eau:</f><g>profondeur de l'eau:</g>").openPopup();
 
 
 var btn = document.querySelector("input");

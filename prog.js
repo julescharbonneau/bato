@@ -1,3 +1,4 @@
+L=2309
 var map = L.map('map').setView([46.971695654090354,-1.3002190607684483], 8);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -6,14 +7,14 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var marker = L.marker([46.971695654090354,-1.3002190607684483]).addTo(map);
-
+var marker = L.marker([48.971695654090354,-2.3002190607684483]).addTo(map);
 var circle = L.circle([46.97612515784068, -1.3130444708906186], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
     radius: 700
 }).addTo(map);
-marker.bindPopup("<b>23 septembre 2024 9h30</b><br>température eau:</br><f>ph de l'eau:</f><g>profondeur de l'eau:</g>").openPopup();
+marker.bindPopup("<b>23 septembre 2024 9h30</b><br>température eau:</br><f>ph de l'eau:</f><g>profondeur de l'eau:</g>",L).openPopup();
 
 
 var btn = document.querySelector("input");
